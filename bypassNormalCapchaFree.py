@@ -26,6 +26,7 @@ def bypass_normal_capcha(api_key,capcha_option=1,image_url='null',image_b64='nul
             return capcha_respond
         except:
             return solver_false
+        
     elif capcha_option == 3: # file image to capcha results
         data = {
             'apikey': api_key,
@@ -47,7 +48,7 @@ def bypass_normal_capcha(api_key,capcha_option=1,image_url='null',image_b64='nul
 
 
 if __name__ == "__main__":
-    api_key = 'K82577978288957'
+    api_key = ''
     # URL CAPCHA IMAGE
     capcha_option = 1
     image_url = 'https://www.textbroker.co.uk/wp-content/uploads/sites/2/2019/12/textbroker_fb.jpg'
